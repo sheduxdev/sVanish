@@ -1,0 +1,53 @@
+#
+#   __      __         _     _
+#   \ \    / /        (_)   | |
+#  __\ \  / /_ _ _ __  _ ___| |__
+# / __\ \/ / _` | '_ \| / __| '_ \
+# \__ \\  / (_| | | | | \__ \ | | |
+# |___/ \/ \__,_|_| |_|_|___/_| |_|
+#
+
+vanished:
+  title: "Staff Vanished"
+  description: "{player_name} has vanished from the game."
+  color: "#FF0000"
+  fields:
+    - name: "Player UUID"
+      value: "{player_uuid}"
+      inline: true
+    - name: "Timestamp"
+      value: "{timestamp}"
+      inline: true
+  # If you want to disable the footer, set it to an empty string.
+  footer:
+    text: "sVanish"
+    icon_url: "https://i.imgur.com/bp9mT1p.png"
+  # If you want to disable the image, set it to an empty string.
+  image-url: ""
+  # If you want to disable the thumbnail, set it to an empty string.
+  thumbnail: "https://minotar.net/helm/{player_name}/256.png"
+
+unvanished:
+  # If you want to disable the title, set it to an empty string.
+  title: "Staff Unvanished"
+  # If you want to disable the description, set it to an empty string.
+  description: "{player_name} has returned to the game."
+  # If you want to disable the color, set it to an empty string.
+  color: "#00FF00"
+  # If you want to disable the fields, set it to an empty list.
+  fields:
+    - name: "Player UUID"
+      value: "{player_uuid}"
+      inline: true
+    - name: "Timestamp"
+      value: "{timestamp}"
+      inline: true
+  footer:
+    # If you want to disable the footer, set it to an empty string.
+    text: "sVanish"
+    # If you want to disable the footer icon, set it to an empty string.
+    icon_url: "https://i.imgur.com/bp9mT1p.png"
+  # If you want to disable the image, set it to an empty string.
+  image-url: ""
+  # If you want to disable the thumbnail, set it to an empty string.
+  thumbnail: "https://minotar.net/helm/{player_name}/256.png"

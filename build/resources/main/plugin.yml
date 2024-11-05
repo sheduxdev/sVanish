@@ -1,0 +1,10 @@
+name: sVanish
+version: '0.1'
+main: dev.shedux.svanish.SVanish
+api-version: '1.13'
+load: STARTUP
+authors: [sheduxdev]
+description: A simple Vanish plugin for minecraft servers.
+website: https://shedux.dev/projects/svanish
+softdepend:
+  - PlaceholderAPI

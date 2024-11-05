@@ -1,0 +1,72 @@
+#
+#   __      __         _     _
+#   \ \    / /        (_)   | |
+#  __\ \  / /_ _ _ __  _ ___| |__
+# / __\ \/ / _` | '_ \| / __| '_ \
+# \__ \\  / (_| | | | | \__ \ | | |
+# |___/ \/ \__,_|_| |_|_|___/_| |_|
+#
+
+discord-webhook:
+  # If you want to use the Discord webhook system, enter your discord webhook link here.
+  url: "YOUR_DISCORD_WEBHOOK_URL"
+
+messages:
+  # Prefix for all messages.
+  # If you want to disable the prefix, set it to an empty string.
+  prefix: "&b&lsVanish"
+  # Message sent to the player if they do not have permission to use the command.
+  no-permission: "&cYou do not have permission to execute this command."
+  # Message sent to the console if it tries to execute a player-only command.
+  console: "&cThis command can only be executed by players."
+  # Action bar message sent to the player when they become vanished.
+  action-bar: "&7You are now vanished."
+  # Message sent to the player when they become vanished.
+  vanished: "&7You are now vanished."
+  # Message sent to the player when they are no longer vanished.
+  unvanished: "&7You are no longer vanished."
+  # Message sent to the player if they are already vanished.
+  already-vanished: "&cYou are already vanished."
+  # Message sent to the player if they are not vanished.
+  already-unvanished: "&cYou are not vanished."
+  # Message sent to all staffs when another player becomes vanished.
+  staff-vanished: "&7Player &e%s &7is now vanished."
+  # Message sent to all staffs when another player is no longer vanished.
+  staff-unvanished: "&7Player &e%s &7is no longer vanished."
+
+sounds:
+  # If you want to play a sound when reload configurations or a player vanishes or unvanishes, enter the sound name here.
+  # Supported sounds: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+  # If you want to disable the sound, set it to an empty string.
+  reload: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  vanish: "ENTITY_ENDERMAN_TELEPORT"
+  unvanish: "ENTITY_ENDERMAN_TELEPORT"
+
+permissions:
+  # Permission that allows players to access the /svanish and /sv commands.
+  admin: "svanish.admin"
+  # Permission that allows players to use the /vanish and /v commands.
+  use: "svanish.use"
+  # Permission that allows players to see other players who are vanished.
+  staff: "svanish.staff"
+
+database:
+  # Supported types: mysql, mariadb, sqlite, mongodb
+  type: sqlite
+  databases:
+    sqlite:
+      name: svanish
+    mysql:
+      host: localhost
+      port: 3306
+      database: svanish
+      username: sheduxdev
+      password: svanishiscool!1881
+    mariadb:
+      host: localhost
+      port: 3306
+      database: svanish
+      username: sheduxdev
+      password: svanishiscool!1881
+    mongodb:
+      uri: mongodb://sheduxdev:svanishiscool!1881@localhost:27017/svanish
